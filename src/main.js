@@ -45,3 +45,10 @@ if (mainHeader) {
 // 2. Select all links inside .navbar using querySelectorAll and log how many there are.
 const allNavLinks = document.querySelectorAll(".navbar a");
 console.info(`Found ${allNavLinks.length} links inside .navbar.`);
+
+// 3. Select internal links (those starting with /) and append " [internal]" to their text.
+const internalLinks = document.querySelectorAll('.navbar a[href^="/"]');
+internalLinks.forEach((link) => {
+  link.textContent += " [internal]";
+});
+console.info("Updated internal links:", internalLinks);
