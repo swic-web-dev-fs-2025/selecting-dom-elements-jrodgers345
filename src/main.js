@@ -59,3 +59,10 @@ requiredInputs.forEach((input) => {
   input.style.outline = "2px solid gold";
 });
 console.info("Added yellow outline to required inputs:", requiredInputs);
+
+// 5. Select all .card elements, loop through them, and add a data-viewed="true" attribute to each.
+const allCards = document.querySelectorAll(".card");
+allCards.forEach((card) => {
+  card.setAttribute("data-viewed", "true");
+});
+console.info("Added data-viewed='true' to all .card elements:", allCards);
