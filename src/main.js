@@ -41,3 +41,7 @@ const mainHeader = document.getElementById("main-header");
 if (mainHeader) {
   console.info("Main Header selected by ID:", mainHeader);
 }
+
+// 2. Select all links inside .navbar using querySelectorAll and log how many there are.
+const allNavLinks = document.querySelectorAll(".navbar a");
+console.info(`Found ${allNavLinks.length} links inside .navbar.`);
