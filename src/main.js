@@ -73,3 +73,11 @@ if (product2) {
   product2.textContent = "$24.99";
   console.info("Updated price for product with ID 2:", product2);
 }
+
+// 7. Guard against null on at least one selector (try targeting something that doesn't exist to practice the guard).
+const nonExistentElement = document.querySelector(".non-existent-class");
+if (nonExistentElement) {
+  console.info("This element exists:", nonExistentElement);
+} else {
+  console.warn("The element with class .non-existent-class does not exist.");
+}
