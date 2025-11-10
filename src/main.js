@@ -66,3 +66,10 @@ allCards.forEach((card) => {
   card.setAttribute("data-viewed", "true");
 });
 console.info("Added data-viewed='true' to all .card elements:", allCards);
+
+// 6. Select the product with data-product-id="2" and change its price to "$24.99".
+const product2 = document.querySelector('.card[data-product-id="2"] .price');
+if (product2) {
+  product2.textContent = "$24.99";
+  console.info("Updated price for product with ID 2:", product2);
+}
