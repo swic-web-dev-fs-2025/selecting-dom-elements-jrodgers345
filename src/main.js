@@ -52,3 +52,10 @@ internalLinks.forEach((link) => {
   link.textContent += " [internal]";
 });
 console.info("Updated internal links:", internalLinks);
+
+// 4. Select all required inputs and add a yellow outline (style.outline = "2px solid gold").
+const requiredInputs = document.querySelectorAll("input[required]");
+requiredInputs.forEach((input) => {
+  input.style.outline = "2px solid gold";
+});
+console.info("Added yellow outline to required inputs:", requiredInputs);
